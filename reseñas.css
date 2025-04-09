@@ -1,0 +1,87 @@
+/* Estilos para la página de opiniones */
+
+:root {
+    --primario: #007bff;
+    --secundario: #e0f0ff;
+    --blanco: #ffffff;
+    --texto: #1a1a1a;
+    --sombra: rgba(0, 0, 0, 0.1);
+    --borde-radius: 1rem;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--secundario);
+    color: var(--texto);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--blanco);
+    box-shadow: 0 4px 10px var(--sombra);
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--primario);
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #0056b3;
+  }
+  
+  .testimonios {
+    padding: 3rem 2rem;
+    background-color: var(--blanco);
+    text-align: center;
+  }
+  
+  .testimonios h2 {
+    color: var(--primario);
+    margin-bottom: 2rem;
+  }
+  
+  .opiniones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .opinion {
+    background-color: var(--secundario);
+    padding: 1.5rem;
+    border-radius: var(--borde-radius);
+    box-shadow: 0 6px 12px var(--sombra);
+    max-width: 300px;
+  }
+  
+  .opinion p {
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  
+  .opinion h4 {
+    color: var(--primario);
+    margin: 0;
+  }
+  
+  .footer {
+    padding: 1rem 2rem;
+    background-color: var(--primario);
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 3rem;
+  }
+  

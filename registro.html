@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro - FutbolCoaches</title>
+  <link rel="stylesheet" href="registro.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="Img/logo_futbol.png" alt="Logo FutbolCoaches" class="logo" />
+    <nav class="nav">
+        <a href="homepage.html">Inicio</a>
+        <a href="registro.html">Registro</a>
+        <a href="perfil.html">Entrenadores</a>
+        <a href="reseñas.html">Opiniones</a>
+        <a href="contactanos.html">Contáctanos</a>
+        <a href="ubicacion.html">Ubicación</a>
+    </nav>
+  </header>
+
+  <section class="registro">
+    <div class="form-container">
+      <h2>Regístrate para encontrar tu entrenador ideal</h2>
+      <form id="formRegistro">
+        <input type="text" placeholder="Nombre completo" name="nombre" required />
+        <input type="email" placeholder="Correo electrónico" name="correo" required />
+        <input type="password" placeholder="Contraseña" name="contrasena" required minlength="6" />
+        <select name="rol" required>
+          <option value="">Selecciona tu rol</option>
+          <option value="cliente">Cliente</option>
+          <option value="entrenador">Administrador</option>
+        </select>
+        <button type="submit" class="btn-principal">Crear cuenta</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="popup" class="popup hidden">
+    <div class="popup-content">
+      <img src="Img/check_icon.png" alt="Check" class="popup-icon" />
+      <h3>¡Registro exitoso!</h3>
+      <p>Bienvenido a FutbolCoaches.</p>
+      <button id="closePopup" class="btn-principal">Cerrar</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 FutbolCoaches. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById('formRegistro').addEventListener('submit', function(event) {
+      const form = event.target;
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        alert("Por favor completa todos los campos correctamente.");
+      } else {
+        event.preventDefault(); // Evita el envío real para mostrar el pop-up
+        document.getElementById('popup').classList.remove('hidden');
+        form.reset(); // Limpia el formulario después del registro
+      }
+    });
+
+    document.getElementById('closePopup').addEventListener('click', function() {
+      document.getElementById('popup').classList.add('hidden');
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* Estilos para la página de perfil */
+
+:root {
+    --primario: #007bff;
+    --secundario: #e0f0ff;
+    --blanco: #ffffff;
+    --texto: #1a1a1a;
+    --sombra: rgba(0, 0, 0, 0.1);
+    --borde-radius: 1rem;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--secundario);
+    color: var(--texto);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--blanco);
+    box-shadow: 0 4px 10px var(--sombra);
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--primario);
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #0056b3;
+  }
+  
+  .main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .filtro-container {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  select {
+    padding: 0.8rem;
+    border-radius: var(--borde-radius);
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .grid-entrenadores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: var(--blanco);
+    border-radius: var(--borde-radius);
+    padding: 1.5rem;
+    box-shadow: 0 6px 12px var(--sombra);
+    transition: transform 0.3s;
+  }
+  
+  .card.hovered {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: var(--borde-radius);
+    margin-bottom: 1rem;
+  }
+  
+  .card h3 {
+    color: var(--primario);
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .footer {
+    padding: 1rem 2rem;
+    background-color: var(--primario);
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 3rem;
+  }
+  

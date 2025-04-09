@@ -1,0 +1,93 @@
+/* Estilos para la página de contacto */
+
+:root {
+  --primario: #007bff;
+  --secundario: #e0f0ff;
+  --blanco: #ffffff;
+  --texto: #1a1a1a;
+  --sombra: rgba(0, 0, 0, 0.1);
+  --borde-radius: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--secundario);
+  color: var(--texto);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--blanco);
+  box-shadow: 0 4px 10px var(--sombra);
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--primario);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #0056b3;
+}
+
+.contacto {
+  padding: 3rem 2rem;
+  background-color: var(--blanco);
+  max-width: 600px;
+  margin: 3rem auto;
+  border-radius: var(--borde-radius);
+  box-shadow: 0 6px 12px var(--sombra);
+  text-align: center;
+}
+
+.contacto h2 {
+  color: var(--primario);
+  margin-bottom: 2rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+input, textarea {
+  padding: 1rem;
+  border-radius: var(--borde-radius);
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.btn-principal {
+  padding: 1rem;
+  background-color: var(--primario);
+  color: var(--blanco);
+  border: none;
+  border-radius: var(--borde-radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-principal:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  padding: 1rem 2rem;
+  background-color: var(--primario);
+  color: var(--blanco);
+  text-align: center;
+  margin-top: 3rem;
+}

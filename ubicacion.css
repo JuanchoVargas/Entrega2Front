@@ -1,0 +1,78 @@
+/* Estilos para la página de ubicación */
+
+:root {
+  --primario: #007bff;
+  --secundario: #e0f0ff;
+  --blanco: #ffffff;
+  --texto: #1a1a1a;
+  --sombra: rgba(0, 0, 0, 0.1);
+  --borde-radius: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--secundario);
+  color: var(--texto);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--blanco);
+  box-shadow: 0 4px 10px var(--sombra);
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--primario);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #0056b3;
+}
+
+.main-ubicacion {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.info h2 {
+  color: var(--primario);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.mapa iframe {
+  width: 100%;
+  border-radius: var(--borde-radius);
+  box-shadow: 0 6px 12px var(--sombra);
+}
+
+.footer {
+  padding: 1rem 2rem;
+  background-color: var(--primario);
+  color: var(--blanco);
+  text-align: center;
+  margin-top: 3rem;
+}

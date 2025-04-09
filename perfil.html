@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfiles de Entrenadores</title>
+  <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+  <header class="header">
+    <img src="logo.png" alt="Logo Futbol" class="logo">
+    <nav class="nav">
+        <a href="homepage.html">Inicio</a>
+        <a href="registro.html">Registro</a>
+        <a href="perfil.html">Entrenadores</a>
+        <a href="reseñas.html">Opiniones</a>
+        <a href="contactanos.html">Contáctanos</a>
+        <a href="ubicacion.html">Ubicación</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="filtro-container">
+      <label for="filtros">Filtrar por especialidad:</label>
+      <select id="filtros">
+        <option value="todos">Todos</option>
+        <option value="porteros">Porteros</option>
+        <option value="defensas">Defensas</option>
+        <option value="delanteros">Delanteros</option>
+      </select>
+    </div>
+
+    <section class="grid-entrenadores">
+      <div class="card" data-especialidad="porteros">
+        <img src="entrenador1.jpg" alt="Entrenador Porteros">
+        <h3>Mario López</h3>
+        <p>Especialista en entrenamiento de porteros. 10 años de experiencia en academias juveniles.</p>
+      </div>
+      <div class="card" data-especialidad="defensas">
+        <img src="entrenador2.jpg" alt="Entrenador Defensas">
+        <h3>Laura Gómez</h3>
+        <p>Formadora táctica de líneas defensivas. Trabajo personalizado para cada jugador.</p>
+      </div>
+      <div class="card" data-especialidad="delanteros">
+        <img src="entrenador3.jpg" alt="Entrenador Delanteros">
+        <h3>Carlos Ruiz</h3>
+        <p>Especialista en finalización y posicionamiento ofensivo. Método intensivo en campo.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 FutbolCoaches. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/perfil.js"></script>
+  <script src="js/profileFunctionality.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
